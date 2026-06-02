@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowGPT - Strict Offline AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <div class="avatar-container">
+            <i class="fa-solid fa-robot bot-icon"></i>
+            <span class="status-indicator online"></span>
+        </div>
+        <div class="header-info">
+            <h1>FlowGPT</h1>
+            <p id="status-text">Local Engine Ready</p>
+        </div>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="message bot-message">
+            <div class="message-content">
+                Hello. I am FlowGPT, an offline assistant. I process text and mathematics locally. Image or photo operations are strictly disabled. How can I help you today?
+            </div>
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type a message or math expression (e.g., 25 * 4)..." autocomplete="off">
+        <button id="btnVoice" title="Talk to FlowGPT"><i class="fa-solid fa-microphone"></i></button>
+        <button id="btnSend" title="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
